@@ -34,7 +34,7 @@ fi
 	
 	echo $vPrefix > v_prefix.txt
         echo $vCount > v_count.txt
-
+	cd /root
  	rm 0.8.12.tar.gz
 	rm -rf 3proxy-0.8.12
 	rm 3proxyinstaller.sh
