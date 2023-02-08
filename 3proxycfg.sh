@@ -1,11 +1,7 @@
-echo pidfile /root/3proxy/3proxy.pid
-
 echo daemon
-echo maxconn 3333
-echo nserver 1.1.1.1
-echo nserver [2606:4700:4700::1111]
-echo nserver [2606:4700:4700::1001]
-echo nserver [2001:4860:4860::8888]
+echo maxconn 20
+echo nserver 2001:4860:4860:0:0:0:0:8888
+echo nserver 2001:4860:4860:0:0:0:0:8844
 echo nscache6 65536
 echo nscache 65536
 echo stacksize 6000
@@ -17,12 +13,12 @@ echo #allow admin
 
 
 # HTTP(S) прокси
-echo "auth iponly"
-echo "allow * 1.4.8.8"
+#echo "auth iponly"
+#echo "allow * 1.4.8.8"
 
-#echo "users user1:CL:user1"
-#echo "flush"
-#echo "allow * * * *"
+echo "users user1:CL:user1"
+echo "flush"
+echo "allow * * * *"
 
 port=30000
 count=1
