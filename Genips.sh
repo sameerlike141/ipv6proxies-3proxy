@@ -6,11 +6,11 @@
 
   ulimit -u unlimited -n 999999 -s 16384
   echo ====================================
-  echo  Stop 3proxy: OK!
+  echo  Stop Server: OK!
   echo ====================================
 
   #kill -9 $(pidof 3proxy)
-  pkill 3proxy
+  /etc/init.d/3proxyinit stop
 
   echo ====================================
   echo  Remove old ip.list: OK!
@@ -84,7 +84,7 @@
   echo      Generate 3proxy.cfg
   echo ====================================
 
-  /root/3proxy/3proxycfg.sh > 3proxy.cfg
+  /etc/3proxy/3proxycfg.sh > 3proxy.cfg
   
   echo ====================================
   echo      Start 3proxy: OK!
@@ -92,4 +92,4 @@
   
   ulimit -u unlimited -n 999999 -s 16384
 
-  /root/3proxy/bin/3proxy /root/3proxy/3proxy.cfg
+  /etc/etc/3proxy /etc/3proxy/3proxy.cfg
