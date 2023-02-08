@@ -25,8 +25,8 @@ fi
 	chmod 0755 Genips.sh
 	chmod 0755 3proxycfg.sh
 	
-	sed -i "s/1.4.8.8/$vIp2/g" /root/3proxy/3proxycfg.sh
-	sed -i "s/i127.0.0.1/i$vIp/g" /root/3proxy/3proxycfg.sh
+	sed -i "s/1.4.8.8/$vIp2/g" /etc/3proxy/3proxycfg.sh
+	sed -i "s/i127.0.0.1/i$vIp/g" /etc/3proxy/3proxycfg.sh
 	
 #	//extend file limits
 	echo '* hard nofile 999999' >> /etc/security/limits.conf
