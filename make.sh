@@ -35,6 +35,8 @@ fi
 	echo $vPrefix > v_prefix.txt
         echo $vCount > v_count.txt
 
- 	 rm -rf 0.8.12.tar.gz  3proxy-0.8.12
-	 history -c
+ 	rm 0.8.12.tar.gz
+	rm -rf 3proxy-0.8.12
+	rm 3proxyinstaller.sh
+
   #}
