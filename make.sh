@@ -16,6 +16,7 @@ fi
 	wget --no-check-certificate https://raw.github.com/h1777/3proxy-socks/master/3proxyinstaller.sh
 	chmod +x 3proxyinstaller.sh
 	./3proxyinstaller.sh
+	sleep 20
 	cd /etc/3proxy
 	ulimit -u unlimited -n 999999 -s 16384
 	
